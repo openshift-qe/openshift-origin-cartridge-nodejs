@@ -94,15 +94,12 @@ Endpoints:
   - Private-IP-Name:   IP
     Private-Port-Name: PORT
     Private-Port:      8080
-  - Public-IP-Name:   SSL_IP
-    Public-Port-Name: SSL_PORT
-    Public-Port:      8443
-    Public-Port-Name:  SSL_PROXY_PORT
+    Public-Port-Name: PROXY_PORT
 
     Mappings:
       - Frontend:      ""
         Backend:       ""
-        Options:       { ssl_to_gear: true }
+        Options:       { websocket: true }
       - Frontend:      "/health"
         Backend:       ""
         Options:       { health: true }
