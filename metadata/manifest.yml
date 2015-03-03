@@ -102,7 +102,7 @@ Endpoints:
     Mappings:
       - Frontend:      ""
         Backend:       ""
-        Options:       { websocket: true, "ssl_to_gear" true }
+        Options:       { websocket: true, ssl_to_gear: true }
       - Frontend:      "/health"
         Backend:       ""
         Options:       { health: true }
