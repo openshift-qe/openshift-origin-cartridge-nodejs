@@ -91,9 +91,9 @@ Group-Overrides:
     - nodejs-0.10
     - web_proxy
 Endpoints:
-#  - Private-IP-Name:   IP
-#    Private-Port-Name: PORT
-#    Private-Port:      8080
+  - Private-IP-Name:   IP
+    Private-Port-Name: PORT
+    Private-Port:      8080
   - Public-IP-Name:   SSL_IP
     Public-Port-Name: SSL_PORT
     Public-Port:      8443
@@ -102,7 +102,7 @@ Endpoints:
     Mappings:
       - Frontend:      ""
         Backend:       ""
-        Options:       { websocket: true, ssl_to_gear: true }
+        Options:       { ssl_to_gear: true }
       - Frontend:      "/health"
         Backend:       ""
         Options:       { health: true }
